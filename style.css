@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+html, body, .main{
+      height: 100%;
+      width: 100%;
+
+}
+html{
+      font-size: 13px;
+      font-family: "Rubik", sans-serif;
+      
+}
+body{
+      background-color:hsl(226, 43%, 10%);
+}
+.main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.article{
+      height: 55%;
+      width: 57%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1em;
+}
+.box{
+      border-radius: 10px;
+      overflow: hidden;
+          
+}
+.up{
+      height: 65%;
+      background-color: hsl(246, 80%, 60%);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+}
+button{
+      display: block;
+      margin-left: 20px;
+      margin-top: 15px;
+      color: rgb(194, 195, 229);
+      font-size: 1rem;
+      font-weight: 700;
+      background-color: transparent;
+      border: none;
+      
+}
+.up .image{
+      height: 40%;
+}
+.image, .name{
+      height: 100%;
+      width: 90%;
+      margin-left: auto;
+}
+.name{
+      margin-top: 2em;
+      color: white;
+}
+.name h1{
+      font-size: 2.5rem;
+      font-weight: 300;
+}
+.image img{
+      position:unset;
+      width: 65px;
+      height: 65px;
+      margin-top: 1.3em;
+      border: 3px solid white;
+      border-radius: 50%;
+}
+.upper{
+      height: 20%;
+      width: 100%;
+      
+      
+}
+.first{
+      background-color: rgb(52, 55, 139);
+      grid-row: span 2;
+      border-radius: 10px;
+      overflow: hidden;
+}
+.upper{
+      overflow: hidden;
+      border: none;
+}
+.bottom{
+      height: 80%;
+      width: 100%;
+      border-top-left-radius: 17px;
+      border-top-right-radius: 17px;
+      background-color: rgb(52, 55, 139);
+      display: flex;
+      justify-content: center;
+}
+button:hover{
+      color:  white;
+      cursor: pointer;
+}
+
+.two{
+      background-color: orange;
+     }
+.three{
+      background-color: aqua;
+}
+.four{
+      background-color: lightcoral;
+}
+.five{
+      background-color: lightgreen;
+}
+.six{
+      background-color: lightpink;
+}
+.seven{
+      background-color: yellow;
+}
+img{
+      position: relative;
+      bottom: 1em;
+      left: 7em;
+}
+.inner-content{
+     max-height: 100%;
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      color: white;
+}
+.action{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -0.5em;
+      align-items: center;
+
+}
+.icon img{
+      position: unset;
+      vertical-align: middle;
+}
+.time span{
+      
+     font-size: 3rem;
+
+}
+.week{
+      margin-top: -1.5em;
+}
+button.active {
+      color: white; /* active state */
+    }
+
+
+
+@media screen and (max-width: 410px) {
+      html{
+            font-size: 11px;
+      }
+      
+      .main{
+            align-items: flex-start;
+            padding: 1em 0;
+            padding-bottom: 5em;
+      }
+      .article{
+            width: 85%;
+            height: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 1.5em;
+      }
+      .box{
+            height: 11.5em;
+      }
+      .box .upper{
+            height: 3em;
+      }
+      .first{
+            height: 13rem;
+      }
+      .up{
+            display: flex;
+            align-items: center;
+      }
+      .up .image{
+            width: 20%;
+            margin-left: 1.5em;
+            height: auto;
+            
+
+      }
+      .action p{
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0.5em;
+            margin-bottom: -1em;
+      }
+      .up .name{
+            padding: 0;
+            height: auto;
+            padding-bottom: 0.8em;
+            margin-left: 1em;
+      }
+      .down{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+      }
+      .down button{
+            font-size: 1.2rem;
+      }
+      
+      .week{
+            width: 50%;
+            position: relative;
+            left: 16em;
+            bottom: 2em;
+            font-weight: bold;
+      }
+}
+
+@media screen and (min-width:420px) and (max-width:840px) {
+      
+      .article{
+            width: 80%;
+            height: auto;
+      }
+
+}
