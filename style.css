@@ -164,7 +164,7 @@ button.active {
 
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
       html{
             font-size: 11px;
       }
@@ -231,7 +231,7 @@ button.active {
       }
 }
 
-@media screen and (min-width:451px) and (max-width:840px) {
+@media screen and (min-width: 510px) and (max-width:840px) {
       
       .article{
             width: 80%;
